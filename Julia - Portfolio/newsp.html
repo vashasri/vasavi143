@@ -1,0 +1,340 @@
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900,400italic,700italic,900italic|Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/newspaper.css">
+    <title>Newspaper design about Ratan Tata</title>
+    <meta name="viewport" content="width=device-width">
+
+</head>
+<style>
+body{
+font-family: 'Droid Serif', serif;
+font-size: 14px;
+color: #2f2f2f;
+background-color: lavender;
+}
+header{
+font-family: 'Playfair Display', serif;
+font-weight: 900;
+font-size: 80px;
+text-transform: uppercase;
+display: inline-block;
+line-height: 72px;
+margin-bottom: 20px;
+
+}
+p{
+margin-top: 0;
+margin-bottom: 20px;
+}
+.head{
+text-align: center;
+position: relative;
+
+
+}
+
+.headerobjectswrapper{
+}
+
+.subhead{
+text-transform: uppercase;
+border-bottom: 2px solid #2f2f2f;
+border-top: 2px solid #2f2f2f;
+padding: 12px 0 12px 0;
+
+}
+.weatherforcastbox{
+position: relative;
+width: 12%;
+left: 10px;
+border: 3px double #2f2f2f;
+padding: 10px 15px 10px 15px;
+line-height: 20px;
+display: inline-block;
+margin: 0 50px 20px -360px;
+}
+.content{
+font-size: 0;
+line-height: 0;
+word-spacing: -.31em;
+display: inline-block;
+margin: 30px 2% 0 2%;
+
+
+}
+.collumns{
+
+}
+
+.collumn{
+font-size: 14px;
+line-height: 20px;
+width: 17.5%;
+display: inline-block;
+padding: 0 1% 0 1%;
+vertical-align: top;
+margin-bottom: 50px;
+transition: all .7s;
+}
+.collumn + .collumn {
+border-left: 1px solid #2f2f2f;
+}
+.collumn .headline{
+text-align: center;
+line-height: normal;
+font-family: 'Playfair Display', serif;
+display: block;
+margin: 0 auto;
+
+
+}
+.collumn .headline.hl1{
+font-weight: 700;
+font-size: 30px;
+text-transform: uppercase;
+padding: 10px 0 10px 0;
+
+}
+
+.collumn .headline.hl2{
+font-weight: 400;
+font-style: italic;
+font-size: 24px;
+box-sizing: border-box;
+padding: 10px 0 10px 0;
+}
+
+.collumn .headline.hl2:before{
+border-top: 1px solid #2f2f2f;
+content: '';
+width: 100px;
+height: 7px;
+display: block;
+margin: 0 auto;
+}
+.collumn .headline.hl2:after{
+border-bottom: 1px solid #2f2f2f;
+content: '';
+width: 100px;
+height: 13px;
+display: block;
+margin: 0 auto;
+
+}
+
+.collumn .headline.hl3{
+font-weight: 400;
+font-style: italic;
+font-size: 36px;
+box-sizing: border-box;
+padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4{
+font-weight: 700;
+font-size: 12px;
+box-sizing: border-box;
+padding: 10px 0 10px 0;
+}
+.collumn .headline.hl4:before{
+border-top: 1px solid #2f2f2f;
+content: '';
+width: 100px;
+height: 7px;
+display: block;
+margin: 0 auto;
+}
+.collumn .headline.hl4:after{
+border-bottom: 1px solid #2f2f2f;
+content: '';
+width: 100px;
+height: 10px;
+display: block;
+margin: 0 auto;
+
+}
+
+.collumn .headline.hl5{
+font-weight: 400;
+font-size: 42px;
+text-transform: uppercase;
+font-style: italic;
+box-sizing: border-box;
+padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6{
+font-weight: 400;
+font-size: 18px;
+box-sizing: border-box;
+padding: 10px 0 10px 0;
+}
+.collumn .headline.hl6:before{
+border-top: 1px solid #2f2f2f;
+content: '';
+width: 100px;
+height: 7px;
+display: block;
+margin: 0 auto;
+}
+.collumn .headline.hl6:after{
+border-bottom: 1px solid #2f2f2f;
+content: '';
+width: 100px;
+height: 10px;
+display: block;
+margin: 0 auto;
+
+}
+.collumn .headline.hl7{
+font-weight: 700;
+font-size: 12px;
+box-sizing: border-box;
+display: block;
+padding: 10px 0 10px 0;
+}
+.collumn .headline.hl8{
+font-weight: 700;
+font-size: 12px;
+box-sizing: border-box;
+padding: 10px 0 10px 0;
+}
+.collumn .headline.hl9{
+font-weight: 700;
+font-size: 12px;
+box-sizing: border-box;
+padding: 10px 0 10px 0;
+}
+.collumn .headline.hl10{
+font-weight: 700;
+font-size: 12px;
+box-sizing: border-box;
+padding: 10px 0 10px 0;
+}
+.collumn .citation{
+font-family: 'Playfair Display', serif;
+font-size: 36px;
+line-height: 44px;
+/*font-style: italic;*/
+text-align: center;
+font-weight: 400;
+display: block;
+margin: 40px 0 40px 0;
+font-feature-settings: "liga", "dlig";
+
+}
+.collumn .citation:before{
+border-top: 1px solid #2f2f2f;
+content: '';
+width: 100px;
+height: 16px;
+display: block;
+margin: 0 auto;
+}
+.collumn .citation:after{
+border-bottom: 1px solid #2f2f2f;
+content: '';
+width: 100px;
+height: 16px;
+display: block;
+margin: 0 auto;
+}
+.collumn .figure {
+margin: 0 0 20px;
+}
+.collumn .figcaption{
+font-style: italic;
+font-size: 12px;
+}
+.media {
+-webkit-filter: sepia(80%) contrast(1) opacity(0.8);
+filter: sepia(80%) grayscale(1) contrast(1) opacity(0.8);
+mix-blend-mode: multiply;
+width: 100%;
+}
+
+@media only all and (max-width: 1300px) {
+.weatherforcastbox{
+display: none;
+}
+
+}
+@media only all and (max-width: 1200px) {
+.collumn{
+width: 31%;
+}
+
+}
+@media only all and (max-width: 900px) {
+.collumn{
+width: 47%;
+}
+
+}
+@media only all and (max-width: 600px) {
+.collumn{
+width: 100%;
+}
+.collumn + .collumn {
+border-left: none;
+border-bottom: 1px solid #2f2f2f;
+}
+header{
+max-width: 320px;
+font-size: 60px;
+line-height: 54px;
+overflow: hidden;
+}
+
+}</style>
+<body>
+<div class="head">
+    <div class="headerobjectswrapper">
+        <div class="weatherforcastbox"><span style="font-style: italic;">Weatherforcast for the next 24 hours: Plenty of Sunshine</span><br><span>Wind: 7km/h SSE; Ther: 21°C; Hum: 82%</span></div>
+        <header>RATAN TATA</header>
+    </div>
+
+    <div class="subhead">Ratan Tata, December 28, 1937, Bombay</div>
+</div>
+<div class="content">
+    <div class="collumns">
+        <div class="collumn">
+            <div class="head"><span class="headline hl3"> "I don't believe in taking the right decisions, I take decisions and then make them right."</span><p><span class="headline hl4">by -RATAN TATA SIR</span></p></div>
+          He joined Tata Sons in 1962, where he worked on the floor. It was a strenuous and difficult job, but he gained experience and understanding of the family business.
+
+In 1971, he was made Director-in-charge of the NELCO (National Radio and Electronics Company Ltd). The company was going through a financial crisis phase. Ratan Tata worked hard to build an improved consumer electronics division, but the economic recession and Union issues did not prove successful.
+
+In 1977, he was transferred to Empress Mills, another struggling Tata Group unit. He made a plan for the mill’s revival, but the other company executives rejected it, and the mill was shut down. Ratan Tata was yet again moved to Tata Industries.
+
+In 1991, JRD Tata appointed Ratan Tata the Chairman of the Tata Group. There were objections from other executives amid concern regarding his ability to manage the responsibilities. Once at the Tata Group’s helm, Ratan Tata successfully improved the organisation’s overall position. He modified the management and vision of the division and also managed to increase the dividends. During this period, he was also a Prime Minister’s Council on Trade and Industry member. He was on the advisory board of the RAND for the Asia Pacific Policy.</p></div>
+        <div class="collumn">
+            <div class="head"><span class="headline hl5">"The greatest failure is not to try."</span><p><span class="headline hl6">"The best way to predict the future is to create it."</span></p></div>
+            Ratan Tata legacy is not only marked by his business achievements but also by his ethical leadership and social responsibility. Through his visionary leadership and unwavering commitment to social causes, he will continue to inspire future generations to lead with integrity and compassion.</p>
+			<figure class="figure">
+								<img class="media" src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLsukvoN3eHHwX2diAT45GvUIik009WZ9Erw&s" alt="">
+								<figcaption class="figcaption"> ratan tata sir.</figcaption>
+						</figure>
+
+            <p>One of Ratan Tata's most notable achievements was the acquisition of Jaguar Land Rover from Ford Motor Company in 2008. This audacious move transformed the Tata Group into a global automotive player, expanding its reach into the luxury car market. Another major achievement included the acquisition of British companies like Tetley Tea, and Corus Steel which placed Tata Group on the global map.
+
+Another significant milestone was the launch of the Tata Nano, an ultra-low-cost car aimed at providing affordable transportation to the Indian masses. The Nano faced challenges and controversies, but it remains a testament to Tata's innovative spirit and his commitment to social responsibility..</p>
+
+            <p>Ratan Tata’s contributions to Indian industry and society were widely recognized, and he received numerous accolades. Some of the most prestigious awards include the Padma Bhushan in 2000 and the Padma Vibhushan in 2008, two of India’s highest civilian honours. Even after retiring as the chairman of Tata Group in 2012, Ratan Tata continues to remain active in various philanthropic and entrepreneurial ventures, including investing in startups and mentoring young entrepreneurs..</p>
+
+            </div>
+        <div class="collumn"><div class="head"><span class="headline hl1">May the Force be with you</span><p><span class="headline hl2">"Never stop learning. Keep challenging yourself to grow and evolve."</span></p></div>Ratan Tata was not just a business leader; he was a role model for ethical leadership and social responsibility. His vision, integrity, and humility have left an indelible mark on India’s corporate landscape. He will always be remembered as someone who transformed Tata Group into a global powerhouse while staying true to the values of honesty and compassion. His leadership of the Tata Group and his commitment to social causes will be remembered for many years to come..</p>
+	<figure class="figure">
+								<img class="media" src="https://cdn.britannica.com/95/127195-050-810993F9/Ratan-Tata-Group-Nano-9th-Auto-Expo-2008.jpg?w=385" alt="">
+								<figcaption class="figcaption">""Dream big and work hard to make those dreams a reality.""</figcaption>
+						</figure>
+            <p>"Your attitude, not your aptitude, will determine your altitude."<span class="citation">"Don't wait for opportunities to come to you, create your own opportunities."</span> Ratan Tata’s contributions to Indian industry and society were widely recognized, and he received numerous accolades. Some of the most prestigious awards include the Padma Bhushan in 2000 and the Padma Vibhushan in 2008, two of India’s highest civilian honours.!</p>
+            <p>You don't bel</p></div>
+       
+        <div class="collumn"><div class="head"><span class="headline hl1">It wasn't a dream </span><p><span class="headline hl4">by - ratan tata</span></p></div><p>Conceptualized in the early 2000s, the Nano aimed to provide middle-class Indians with a safe and affordable car, motivated by the sight of families riding scooters in precarious conditions. One of Ratan Tata's most ambitious projects was undoubtedly the Nano which was perhaps one that was closest to his heart. </p>
+					
+					<p>The car, which initially saw a deluge of bookings, was soon mired in controversies - right from the location of the factory where it had to be produced (the then West Bengal opposition leader Mamata Banerjee's stir saw its manufacturing shift from Singur to Sanand in Gujarat in Oct 2008); to facing sporadic incidents of fire due to mechanical issues; to being billed as unsafe; to be being branded as a 'poor man's car'. The last one saw many middle-class Indians avoid buying the car
+. </p></div>
+    </div>
+</div>
+
+</body>
+</html>
